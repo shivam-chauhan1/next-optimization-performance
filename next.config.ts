@@ -1,7 +1,18 @@
-import type { NextConfig } from "next";
+import withBundleAnalyzerImport from "@next/bundle-analyzer";
+const withBundleAnalyzer = withBundleAnalyzerImport({
+  enabled: process.env.ANALYZE === "true",
+});
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
+  },
+  images: {
+    domains: ["dummyjson.com", "cdn.dummyjson.com"],
+  },
 };
 
-export default nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);
