@@ -16,8 +16,9 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js 15.2 Product App",
-  description: "A demo application showing Next.js 15.2 features",
+  title: "Optimization and Performance",
+  description:
+    "A demo application showing Next.js Optimization and Performance features",
 };
 
 export default function RootLayout({

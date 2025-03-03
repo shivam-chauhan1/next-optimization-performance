@@ -32,7 +32,7 @@ export default async function Home() {
   return (
     <div className="space-y-8">
       <h1 className="text-3xl font-mono font-bold text-center my-8">
-        Next.js 15.2 Product Demo
+        Next.js Optimization and Performance
       </h1>
 
       <div className="flex justify-center mb-6">
